@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Top 10 crypto currencies rates:</h1>
+    <div class="row">
+        {{#each _ar}}
+        <div class="col-6 border border-dark">
+            <img class="float-left mr-2"
+                src="https://files.coinmarketcap.com/static/widget/coins_legacy/64x64/{{id}}.png" />
+            <h2>{{name}}</h2>
+            <p>Value: {{myPrice}}</p>
+        </div>
+
+        {{/each}}
+    </div>
+</div>
