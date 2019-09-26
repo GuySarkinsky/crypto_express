@@ -18,8 +18,8 @@ router.get('/bit', function (req, res, next) {
       for (var i in json_ar) {
         json_ar[i].myPrice = Number(json_ar[i].price_usd).toFixed(3);
       }
-      res.render('/ bit', {
-        title: 'Bit',
+      res.render('bit', {
+        title: 'Crypto10',
         _ar: json_ar
       });
     })
@@ -32,7 +32,7 @@ router.get('/bit', function (req, res, next) {
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.render('index', {
-    title: 'Bit'
+    title: 'Crypto10'
   });
 });
 
